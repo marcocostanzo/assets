@@ -75,7 +75,23 @@ keywords = "Friction, Lyapunov stability, Robotic manipulators, Force control, N
 abstract = "The paper presents a novel strategy to control the instantaneous rotational velocity of a planar slider subject to a soft contact with friction and to external loads, including gravity. The approach is based on a novel model that combines the LuGre dynamic friction model with the limit surface concept for two main reasons. First, the limit surface allows considering both translational and rotational sliding motions. Secondly, the actual friction provided at the contact by the LuGre dynamic model exhibits dependence on the rate of variation of the external loads and, thus, it is worthwhile in dynamic conditions. Slipping control is realized by acting on the friction forces through the normal load so as to stably regulate the velocity of the slider to zero. The control law exploits a nonlinear observer, based on the proposed model, to estimate the instantaneous rotational velocity of the slider, which is used to compute the normal load necessary to ensure a globally asymptotically stable equilibrium of the slider. Experimental results show the effectiveness of the approach in an application of robotic manipulation using an industrial gripper sensorized with force/tactile sensors."
 }
 
-@ARTICLE{Costanzo20_TASE,
+@article{Costanzo_IFAC20,
+title = {Control of Sliding Velocity in Robotic Object Pivoting Based on Tactile Sensing⁎⁎This work was supported by the European Commission within the H2020 REFILLS project, ID n. 731590.},
+journal = {IFAC-PapersOnLine},
+volume = {53},
+number = {2},
+pages = {9950-9955},
+year = {2020},
+note = {21th IFAC World Congress},
+issn = {2405-8963},
+doi = {https://doi.org/10.1016/j.ifacol.2020.12.2710},
+url = {https://www.sciencedirect.com/science/article/pii/S240589632033473X},
+author = {Marco Costanzo and Giuseppe De Maria and Ciro Natale},
+keywords = {Robotic manipulators, Robot control, Friction, Nonlinear systems, Observers},
+abstract = {Control of robots manipulating objects using only the sense of touch is a challenge. In-hand motion of the manipulated object highly depends on the friction forces acting at the contact surfaces. Soft contacts allow torsional frictions as well as friction forces, therefore robots can perform more complex manipulation abilities, like object pivoting. Control of the pivoting sliding motion is very difficult especially without any visual feedback. The paper proposes a novel method to control the sliding velocity of the object by using a simple parallel gripper endowed with force/tactile sensors only. The strategy is based on a nonlinear observer that estimates the sliding velocity from force/torque measurements and a model of the sliding dynamics.}
+}
+
+@ARTICLE{Costanzo21_TASE,
   author={M. {Costanzo} and G. {De Maria} and G. {Lettera} and C. {Natale}},
   journal={IEEE Transactions on Automation Science and Engineering}, 
   title={A Multimodal Approach to Human Safety in Collaborative Robotic Workcells}, 
@@ -83,7 +99,47 @@ abstract = "The paper presents a novel strategy to control the instantaneous rot
   volume={},
   number={},
   pages={1-15},
-  doi={10.1109/TASE.2020.3043286}}
+  doi={10.1109/TASE.2020.3043286}
+}
+
+@Article{Cirillo21_Sensors,
+AUTHOR = {Cirillo, Andrea and Costanzo, Marco and Laudante, Gianluca and Pirozzi, Salvatore},
+TITLE = {Tactile Sensors for Parallel Grippers: Design and Characterization},
+JOURNAL = {Sensors},
+VOLUME = {21},
+YEAR = {2021},
+NUMBER = {5},
+ARTICLE-NUMBER = {1915},
+URL = {https://www.mdpi.com/1424-8220/21/5/1915},
+ISSN = {1424-8220},
+ABSTRACT = {Tactile data perception is of paramount importance in today’s robotics applications. This paper describes the latest design of the tactile sensor developed in our laboratory. Both the hardware and firmware concepts are reported in detail in order to allow the research community the sensor reproduction, also according to their needs. The sensor is based on optoelectronic technology and the pad shape can be adapted to various robotics applications. A flat surface, as the one proposed in this paper, can be well exploited if the object sizes are smaller than the pad and/or the shape recognition is needed, while a domed pad can be used to manipulate bigger objects. Compared to the previous version, the novel tactile sensor has a larger sensing area and a more robust electronic, mechanical and software design that yields less noise and higher flexibility. The proposed design exploits standard PCB manufacturing processes and advanced but now commercial 3D printing processes for the realization of all components. A GitHub repository has been prepared with all files needed to allow the reproduction of the sensor for the interested reader. The whole sensor has been tested with a maximum load equal to 15N, by showing a sensitivity equal to 0.018V/N. Moreover, a complete and detailed characterization for the single taxel and the whole pad is reported to show the potentialities of the sensor also in terms of response time, repeatability, hysteresis and signal to noise ratio.},
+DOI = {10.3390/s21051915}
+}
+
+@ARTICLE{Costanzo21_RAM,
+  author={Costanzo, Marco and De Maria, Giuseppe and Lettera, Gaetano and Natale, Ciro},
+  journal={IEEE Robotics   Automation Magazine}, 
+  title={Can Robots Refill a Supermarket Shelf?: Motion Planning and Grasp Control}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={2-14},
+  doi={10.1109/MRA.2021.3064754}
+}
+
+@article{Costanzo21_Mechatronics,
+title = {Control of robotic object pivoting based on tactile sensing},
+journal = {Mechatronics},
+volume = {76},
+pages = {102545},
+year = {2021},
+issn = {0957-4158},
+doi = {https://doi.org/10.1016/j.mechatronics.2021.102545},
+url = {https://www.sciencedirect.com/science/article/pii/S095741582100043X},
+author = {Marco Costanzo},
+keywords = {Robotic manipulators, Robot control, Friction, Nonlinear systems, Observers},
+abstract = {Robotic manipulation of objects using the sole tactile feedback is a challenge. If the contact between the robot end effector and the manipulated object is distributed, the robot can exchange both friction forces and torques with it. The friction highly influences the motion of the object. By controlling the friction it is possible to perform complex manipulation tasks, such as moving the object with respect to the end effector by executing a controlled sliding motion. If the motion is a rotation with respect to the end effector, the corresponding maneuver is called pivoting. Control of the pivoting motion is considerably difficult, especially without any visual feedback. This paper proposes a novel method to regulate the object angular position, by means of a pivoting maneuver, through a parallel gripper endowed with force/tactile sensors. The strategy is based on a novel nonlinear observer that estimates the sliding velocity from force/torque measurements and a model of the sliding dynamics. We exploit the Limit Surface concept and the LuGre friction model to build a dynamic model of a planar slider. We show, through experimental results, that simple parallel grippers are able to execute such maneuvers that correspond to adding a virtual joint between the fingers, thus enlarging the robot workspace.}
+}
 
 %%%%%%%%%%%%%%%%%%%
 %%% Conferences %%%
@@ -156,31 +212,13 @@ isbn={978-989-758-380-3},
   ISSN={2577-1655},
   month={Oct},}
   
-  @INPROCEEDINGS{Costanzo20_ICRA,
-  author={M. {Costanzo} and G. {De Maria} and G. {Lettera} and C. {Natale}},
+@INPROCEEDINGS{Costanzo20_ICRA,
+  author={Costanzo, Marco and De Maria, Giuseppe and Lettera, Gaetano and Natale, Ciro},
   booktitle={2020 IEEE International Conference on Robotics and Automation (ICRA)}, 
   title={Grasp Control for Enhancing Dexterity of Parallel Grippers}, 
   year={2020},
   volume={},
   number={},
   pages={524-530},
-  abstract={A robust grasp controller for both slipping avoidance and controlled sliding is proposed based on force/tactile feedback only. The model-based algorithm exploits a modified LuGre friction model to consider rotational frictional sliding motions. The modification relies on the Limit Surface concept where a novel computationally efficient method is introduced to compute in real-time the minimum grasping force to balance tangential and torsional loads. The two control modalities are considered by the robot motion planning algorithm that automatically generates robot motions and gripper commands to solve complex manipulation tasks in a material handling application.},
-  keywords={Force;Grippers;Friction;Dynamics;Mathematical model;Computational modeling;Grasping},
-  doi={10.1109/ICRA40945.2020.9196873},
-  ISSN={2577-087X},
-  month={May},}
-  
-  @article{Costanzo_IFAC20,
-	title = "Control of Sliding Velocity in Robotic Object Pivoting Based on Tactile Sensing",
-	journal = "IFAC-PapersOnLine",
-	volume = "",
-	number = "",
-	pages = "10085 - 10090",
-	year = "2020",
-	note = "21th IFAC World Congress, Berlin, Germany, July 12-17, 2020",
-	issn = "",
-	doi = "",
-	url = "",
-	author = "Marco {Costanzo} and Giuseppe {De Maria} and Ciro {Natale}",
-	keywords = "Robotic manipulators, Robot control, Friction, Nonlinear systems, Observers",
-}
+  doi={10.1109/ICRA40945.2020.9196873}}
+
