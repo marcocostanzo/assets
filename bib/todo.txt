@@ -1,3 +1,0 @@
-
-C5. A. Cavallo, M. Costanzo, G. De Maria, C. Natale and S. Pirozzi. 
-Slipping Control Algorithms for Robotic Manipulation. 2019 Automatica.it. Ancona, 2019.

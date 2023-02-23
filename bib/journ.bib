@@ -70,8 +70,8 @@ keywords = "Friction, Lyapunov stability, Robotic manipulators, Force control, N
 abstract = "The paper presents a novel strategy to control the instantaneous rotational velocity of a planar slider subject to a soft contact with friction and to external loads, including gravity. The approach is based on a novel model that combines the LuGre dynamic friction model with the limit surface concept for two main reasons. First, the limit surface allows considering both translational and rotational sliding motions. Secondly, the actual friction provided at the contact by the LuGre dynamic model exhibits dependence on the rate of variation of the external loads and, thus, it is worthwhile in dynamic conditions. Slipping control is realized by acting on the friction forces through the normal load so as to stably regulate the velocity of the slider to zero. The control law exploits a nonlinear observer, based on the proposed model, to estimate the instantaneous rotational velocity of the slider, which is used to compute the normal load necessary to ensure a globally asymptotically stable equilibrium of the slider. Experimental results show the effectiveness of the approach in an application of robotic manipulation using an industrial gripper sensorized with force/tactile sensors."
 }
 
-@article{Costanzo_IFAC20,
-title = {Control of Sliding Velocity in Robotic Object Pivoting Based on Tactile Sensing⁎⁎This work was supported by the European Commission within the H2020 REFILLS project, ID n. 731590.},
+@inproceedings{Costanzo_IFAC20,
+title = {Control of Sliding Velocity in Robotic Object Pivoting Based on Tactile Sensing},
 journal = {IFAC-PapersOnLine},
 volume = {53},
 number = {2},
@@ -81,7 +81,7 @@ note = {21th IFAC World Congress},
 issn = {2405-8963},
 doi = {https://doi.org/10.1016/j.ifacol.2020.12.2710},
 url = {https://www.sciencedirect.com/science/article/pii/S240589632033473X},
-author = {Marco Costanzo and Giuseppe De Maria and Ciro Natale},
+author = "Marco Costanzo and Giuseppe {De Maria} and Ciro Natale",
 keywords = {Robotic manipulators, Robot control, Friction, Nonlinear systems, Observers},
 abstract = {Control of robots manipulating objects using only the sense of touch is a challenge. In-hand motion of the manipulated object highly depends on the friction forces acting at the contact surfaces. Soft contacts allow torsional frictions as well as friction forces, therefore robots can perform more complex manipulation abilities, like object pivoting. Control of the pivoting sliding motion is very difficult especially without any visual feedback. The paper proposes a novel method to control the sliding velocity of the object by using a simple parallel gripper endowed with force/tactile sensors only. The strategy is based on a nonlinear observer that estimates the sliding velocity from force/torque measurements and a model of the sliding dynamics.}
 }
@@ -135,3 +135,60 @@ author = {Marco Costanzo},
 keywords = {Robotic manipulators, Robot control, Friction, Nonlinear systems, Observers},
 abstract = {Robotic manipulation of objects using the sole tactile feedback is a challenge. If the contact between the robot end effector and the manipulated object is distributed, the robot can exchange both friction forces and torques with it. The friction highly influences the motion of the object. By controlling the friction it is possible to perform complex manipulation tasks, such as moving the object with respect to the end effector by executing a controlled sliding motion. If the motion is a rotation with respect to the end effector, the corresponding maneuver is called pivoting. Control of the pivoting motion is considerably difficult, especially without any visual feedback. This paper proposes a novel method to regulate the object angular position, by means of a pivoting maneuver, through a parallel gripper endowed with force/tactile sensors. The strategy is based on a novel nonlinear observer that estimates the sliding velocity from force/torque measurements and a model of the sliding dynamics. We exploit the Limit Surface concept and the LuGre friction model to build a dynamic model of a planar slider. We show, through experimental results, that simple parallel grippers are able to execute such maneuvers that correspond to adding a virtual joint between the fingers, thus enlarging the robot workspace.}
 }
+
+@ARTICLE{Costanzo21_Measurement_Magazine,
+  author={Costanzo, Marco and Pirozzi, Salvatore},
+  journal={IEEE Instrumentation   Measurement Magazine}, 
+  title={Optical Force/Tactile Sensors for Robotic Applications}, 
+  year={2021},
+  volume={24},
+  number={5},
+  pages={28-35},
+  doi={10.1109/MIM.2021.9491003}}
+  
+@ARTICLE{Costanzo21_Frontiers,
+AUTHOR={Costanzo, Marco and {De Maria}, Giuseppe and Natale, Ciro},   
+TITLE={Handover Control for Human-Robot and Robot-Robot Collaboration},     
+JOURNAL={Frontiers in Robotics and AI},      
+VOLUME={8},      
+PAGES={132},     
+YEAR={2021},      
+URL={https://www.frontiersin.org/article/10.3389/frobt.2021.672995},       
+DOI={10.3389/frobt.2021.672995},      
+ISSN={2296-9144},   
+ABSTRACT={Modern scenarios in robotics involve human-robot collaboration or robot-robot cooperation in unstructured environments. In human-robot collaboration, the objective is to relieve humans from repetitive and wearing tasks. This is the case of a retail store, where the robot could help a clerk to refill a shelf or an elderly customer to pick an item from an uncomfortable location. In robot-robot cooperation, automated logistics scenarios, such as warehouses, distribution centers and supermarkets, often require repetitive and sequential pick and place tasks that can be executed more efficiently by exchanging objects between robots, provided that they are endowed with object handover ability. Use of a robot for passing objects is justified only if the handover operation is sufficiently intuitive for the involved humans, fluid and natural, with a speed comparable to that typical of a human-human object exchange. The approach proposed in this paper strongly relies on visual and haptic perception combined with suitable algorithms for controlling both robot motion, to allow the robot to adapt to human behavior, and grip force, to ensure a safe handover. The control strategy combines model-based reactive control methods with an event-driven state machine encoding a human-inspired behavior during a handover task, which involves both linear and torsional loads, without requiring explicit learning from human demonstration. Experiments in a supermarket-like environment with humans and robots communicating only through haptic cues demonstrate the relevance of force/tactile feedback in accomplishing handover operations in a collaborative task.}
+}
+
+@ARTICLE{Costanzo22_RAL_dual_arm,
+  author={Costanzo, Marco and De Maria, Giuseppe and Natale, Ciro},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Tactile Feedback Enabling In-Hand Pivoting and Internal Force Control for Dual-Arm Cooperative Object Carrying}, 
+  year={2022},
+  volume={7},
+  number={4},
+  pages={11466-11473},
+  doi={10.1109/LRA.2022.3202358}}
+
+  @ARTICLE{Costanzo22_RAL_VS,
+  author={Costanzo, Marco and De Maria, Giuseppe and Natale, Ciro and Russo, Antonio},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Stability and Convergence Analysis of 3D Feature-Based Visual Servoing}, 
+  year={2022},
+  volume={7},
+  number={4},
+  pages={12022-12029},
+  doi={10.1109/LRA.2022.3211154}}
+
+@article{Costanzo22_MDPI_Sensors, 
+title={Detecting and Controlling Slip through Estimation and Control of the Sliding Velocity}, 
+volume={13}, 
+ISSN={2076-3417}, 
+url={http://dx.doi.org/10.3390/app13020921}, 
+DOI={10.3390/app13020921}, 
+number={2}, 
+journal={Applied Sciences}, 
+publisher={MDPI AG}, 
+author={Costanzo, Marco and De Maria, Giuseppe and Natale, Ciro}, 
+year={2023}, 
+month={Jan},
+pages={921} }
